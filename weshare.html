@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Notes Sharing App</title>
+    <link rel="stylesheet" type="text/css" href="app.css">
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="logo">Logo</div>
+            <ul class="menu">
+                <li><a href="#">View Notes</a></li>
+                <li><a href="#">Upload Notes</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="home">
+        <div class="background-image">
+            <h1>Register and start contributing today</h1>
+            <a href="signup.html" class="button">Sign Up</a>
+        </div>
+    </div>
+
+    <div class="view-notes">
+        <table>
+            <thead>
+                <tr>
+                    <th>Note Name</th>
+                    <th>Subject</th>
+                    <th>Download</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Note 1</td>
+                    <td>Subject 1</td>
+                    <td><a href="#">Download</a></td>
+                </tr>
+                <tr>
+                    <td>Note 2</td>
+                    <td>Subject 2</td>
+                    <td><a href="#">Download</a></td>
+                </tr>
+                <!-- Add more rows for other notes -->
+            </tbody>
+        </table>
+    </div>
+
+    <div class="upload-notes">
+        <form id="uploadForm" name="uploadForm" method="post" action="upload.php" enctype="multipart/form-data">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+
+            <label for="file">Upload File:</label>
+            <input type="file" id="file" name="file" required>
+
+            <button type="submit">Upload</button>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
